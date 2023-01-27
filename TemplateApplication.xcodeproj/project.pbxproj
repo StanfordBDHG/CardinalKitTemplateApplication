@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F38E234298047DA00E05C29 /* TemplateSharedContext in Frameworks */ = {isa = PBXBuildFile; productRef = 2F38E233298047DA00E05C29 /* TemplateSharedContext */; };
-		2F38E236298048E500E05C29 /* TemplateMockDataStorageProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 2F38E235298048E500E05C29 /* TemplateMockDataStorageProvider */; };
-		2F38E23829804AA300E05C29 /* TemplateContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 2F38E23729804AA300E05C29 /* TemplateContacts */; };
-		2F38E23A29804AE300E05C29 /* TemplateOnboardingFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 2F38E23929804AE300E05C29 /* TemplateOnboardingFlow */; };
-		2F38E23C29804EFA00E05C29 /* TemplateSchedule in Frameworks */ = {isa = PBXBuildFile; productRef = 2F38E23B29804EFA00E05C29 /* TemplateSchedule */; };
-		2F49B7762980407C00BCB272 /* CardinalKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B7752980407B00BCB272 /* CardinalKit */; };
-		2F49B7782980407C00BCB272 /* FHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B7772980407C00BCB272 /* FHIR */; };
-		2F49B77A2980407C00BCB272 /* HealthKitDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B7792980407C00BCB272 /* HealthKitDataSource */; };
-		2F49B77C2980407C00BCB272 /* HealthKitToFHIRAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B77B2980407C00BCB272 /* HealthKitToFHIRAdapter */; };
-		2F49B77E2980407C00BCB272 /* Scheduler in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B77D2980407C00BCB272 /* Scheduler */; };
-		2F49B7802980418400BCB272 /* Onboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B77F2980418400BCB272 /* Onboarding */; };
-		2F49B7822980419C00BCB272 /* Questionnaires in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B7812980419C00BCB272 /* Questionnaires */; };
-		2F49B784298041F300BCB272 /* Contact in Frameworks */ = {isa = PBXBuildFile; productRef = 2F49B783298041F300BCB272 /* Contact */; };
+		2F48D6F729834AB100F6BF88 /* TemplateContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6F629834AB100F6BF88 /* TemplateContacts */; };
+		2F48D6F929834AB100F6BF88 /* TemplateMockDataStorageProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6F829834AB100F6BF88 /* TemplateMockDataStorageProvider */; };
+		2F48D6FB29834AB100F6BF88 /* TemplateOnboardingFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6FA29834AB100F6BF88 /* TemplateOnboardingFlow */; };
+		2F48D6FD29834AB100F6BF88 /* TemplateSchedule in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6FC29834AB100F6BF88 /* TemplateSchedule */; };
+		2F48D6FF29834AB100F6BF88 /* TemplateSharedContext in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6FE29834AB100F6BF88 /* TemplateSharedContext */; };
+		2F48D70129834ABD00F6BF88 /* CardinalKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70029834ABD00F6BF88 /* CardinalKit */; };
+		2F48D70329834ABD00F6BF88 /* FHIR in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70229834ABD00F6BF88 /* FHIR */; };
+		2F48D70529834ABD00F6BF88 /* HealthKitDataSource in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70429834ABD00F6BF88 /* HealthKitDataSource */; };
+		2F48D70729834ABD00F6BF88 /* HealthKitToFHIRAdapter in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70629834ABD00F6BF88 /* HealthKitToFHIRAdapter */; };
+		2F48D70929834ABD00F6BF88 /* Questionnaires in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70829834ABD00F6BF88 /* Questionnaires */; };
+		2F48D70B29834ABD00F6BF88 /* Scheduler in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D70A29834ABD00F6BF88 /* Scheduler */; };
 		2F5E32BD297E05EA003432F8 /* TemplateAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5E32BC297E05EA003432F8 /* TemplateAppDelegate.swift */; };
 		2FC9759F2978E39600BA99FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FC9759E2978E39600BA99FE /* Localizable.strings */; };
 		2FC975A82978F11A00BA99FE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC975A72978F11A00BA99FE /* Home.swift */; };
@@ -67,19 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F49B7822980419C00BCB272 /* Questionnaires in Frameworks */,
-				2F49B77E2980407C00BCB272 /* Scheduler in Frameworks */,
-				2F49B77A2980407C00BCB272 /* HealthKitDataSource in Frameworks */,
-				2F49B784298041F300BCB272 /* Contact in Frameworks */,
-				2F38E236298048E500E05C29 /* TemplateMockDataStorageProvider in Frameworks */,
-				2F38E234298047DA00E05C29 /* TemplateSharedContext in Frameworks */,
-				2F38E23829804AA300E05C29 /* TemplateContacts in Frameworks */,
-				2F49B7782980407C00BCB272 /* FHIR in Frameworks */,
-				2F38E23C29804EFA00E05C29 /* TemplateSchedule in Frameworks */,
-				2F49B7802980418400BCB272 /* Onboarding in Frameworks */,
-				2F49B7762980407C00BCB272 /* CardinalKit in Frameworks */,
-				2F49B77C2980407C00BCB272 /* HealthKitToFHIRAdapter in Frameworks */,
-				2F38E23A29804AE300E05C29 /* TemplateOnboardingFlow in Frameworks */,
+				2F48D70B29834ABD00F6BF88 /* Scheduler in Frameworks */,
+				2F48D6FB29834AB100F6BF88 /* TemplateOnboardingFlow in Frameworks */,
+				2F48D6F929834AB100F6BF88 /* TemplateMockDataStorageProvider in Frameworks */,
+				2F48D6FF29834AB100F6BF88 /* TemplateSharedContext in Frameworks */,
+				2F48D70929834ABD00F6BF88 /* Questionnaires in Frameworks */,
+				2F48D70129834ABD00F6BF88 /* CardinalKit in Frameworks */,
+				2F48D70329834ABD00F6BF88 /* FHIR in Frameworks */,
+				2F48D6F729834AB100F6BF88 /* TemplateContacts in Frameworks */,
+				2F48D6FD29834AB100F6BF88 /* TemplateSchedule in Frameworks */,
+				2F48D70529834ABD00F6BF88 /* HealthKitDataSource in Frameworks */,
+				2F48D70729834ABD00F6BF88 /* HealthKitToFHIRAdapter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,19 +180,17 @@
 			);
 			name = TemplateApplication;
 			packageProductDependencies = (
-				2F49B7752980407B00BCB272 /* CardinalKit */,
-				2F49B7772980407C00BCB272 /* FHIR */,
-				2F49B7792980407C00BCB272 /* HealthKitDataSource */,
-				2F49B77B2980407C00BCB272 /* HealthKitToFHIRAdapter */,
-				2F49B77D2980407C00BCB272 /* Scheduler */,
-				2F49B77F2980418400BCB272 /* Onboarding */,
-				2F49B7812980419C00BCB272 /* Questionnaires */,
-				2F49B783298041F300BCB272 /* Contact */,
-				2F38E233298047DA00E05C29 /* TemplateSharedContext */,
-				2F38E235298048E500E05C29 /* TemplateMockDataStorageProvider */,
-				2F38E23729804AA300E05C29 /* TemplateContacts */,
-				2F38E23929804AE300E05C29 /* TemplateOnboardingFlow */,
-				2F38E23B29804EFA00E05C29 /* TemplateSchedule */,
+				2F48D6F629834AB100F6BF88 /* TemplateContacts */,
+				2F48D6F829834AB100F6BF88 /* TemplateMockDataStorageProvider */,
+				2F48D6FA29834AB100F6BF88 /* TemplateOnboardingFlow */,
+				2F48D6FC29834AB100F6BF88 /* TemplateSchedule */,
+				2F48D6FE29834AB100F6BF88 /* TemplateSharedContext */,
+				2F48D70029834ABD00F6BF88 /* CardinalKit */,
+				2F48D70229834ABD00F6BF88 /* FHIR */,
+				2F48D70429834ABD00F6BF88 /* HealthKitDataSource */,
+				2F48D70629834ABD00F6BF88 /* HealthKitToFHIRAdapter */,
+				2F48D70829834ABD00F6BF88 /* Questionnaires */,
+				2F48D70A29834ABD00F6BF88 /* Scheduler */,
 			);
 			productName = TemplateApplication;
 			productReference = 653A254D283387FE005D4D48 /* TemplateApplication.app */;
@@ -273,7 +267,7 @@
 			);
 			mainGroup = 653A2544283387FE005D4D48;
 			packageReferences = (
-				2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */,
+				2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */,
 			);
 			productRefGroup = 653A254E283387FE005D4D48 /* Products */;
 			projectDirPath = "";
@@ -665,76 +659,66 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */ = {
+		2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/StanfordBDHG/CardinalKit";
+			repositoryURL = "https://github.com/StanfordBDHG/CardinalKit.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 0.2.1;
+				branch = cardinalKitDocs;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F38E233298047DA00E05C29 /* TemplateSharedContext */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TemplateSharedContext;
-		};
-		2F38E235298048E500E05C29 /* TemplateMockDataStorageProvider */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TemplateMockDataStorageProvider;
-		};
-		2F38E23729804AA300E05C29 /* TemplateContacts */ = {
+		2F48D6F629834AB100F6BF88 /* TemplateContacts */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TemplateContacts;
 		};
-		2F38E23929804AE300E05C29 /* TemplateOnboardingFlow */ = {
+		2F48D6F829834AB100F6BF88 /* TemplateMockDataStorageProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TemplateMockDataStorageProvider;
+		};
+		2F48D6FA29834AB100F6BF88 /* TemplateOnboardingFlow */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TemplateOnboardingFlow;
 		};
-		2F38E23B29804EFA00E05C29 /* TemplateSchedule */ = {
+		2F48D6FC29834AB100F6BF88 /* TemplateSchedule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TemplateSchedule;
 		};
-		2F49B7752980407B00BCB272 /* CardinalKit */ = {
+		2F48D6FE29834AB100F6BF88 /* TemplateSharedContext */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			productName = TemplateSharedContext;
+		};
+		2F48D70029834ABD00F6BF88 /* CardinalKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
 			productName = CardinalKit;
 		};
-		2F49B7772980407C00BCB272 /* FHIR */ = {
+		2F48D70229834ABD00F6BF88 /* FHIR */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
 			productName = FHIR;
 		};
-		2F49B7792980407C00BCB272 /* HealthKitDataSource */ = {
+		2F48D70429834ABD00F6BF88 /* HealthKitDataSource */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
 			productName = HealthKitDataSource;
 		};
-		2F49B77B2980407C00BCB272 /* HealthKitToFHIRAdapter */ = {
+		2F48D70629834ABD00F6BF88 /* HealthKitToFHIRAdapter */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
 			productName = HealthKitToFHIRAdapter;
 		};
-		2F49B77D2980407C00BCB272 /* Scheduler */ = {
+		2F48D70829834ABD00F6BF88 /* Questionnaires */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
-			productName = Scheduler;
-		};
-		2F49B77F2980418400BCB272 /* Onboarding */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
-			productName = Onboarding;
-		};
-		2F49B7812980419C00BCB272 /* Questionnaires */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
 			productName = Questionnaires;
 		};
-		2F49B783298041F300BCB272 /* Contact */ = {
+		2F48D70A29834ABD00F6BF88 /* Scheduler */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F49B7742980407B00BCB272 /* XCRemoteSwiftPackageReference "CardinalKit" */;
-			productName = Contact;
+			package = 2F48D6E72983498100F6BF88 /* XCRemoteSwiftPackageReference "CardinalKit" */;
+			productName = Scheduler;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

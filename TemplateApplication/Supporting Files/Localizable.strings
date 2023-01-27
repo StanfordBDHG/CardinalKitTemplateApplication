@@ -7,13 +7,17 @@
 //
 
 
+// MARK: - Schedule
+"SCHEDULE_TAB_TITLE" = "Schedule";
+
+
+// MARK: - Charts
+"CHARTS_TAB_TITLE" = "Charts";
+
+
 // MARK: - Contacts
 "CONTACTS_TAB_TITLE" = "Contacts";
 
 
 // MARK: - Mock Upload Data Storage Provider
 "MOCK_UPLOAD_TAB_TITLE" = "Mock Upload";
-
-
-// MARK: - Schedule
-"SCHEDULE_TAB_TITLE" = "Schedule";

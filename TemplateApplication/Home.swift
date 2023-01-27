@@ -8,6 +8,7 @@
 
 import SwiftUI
 import TemplateContacts
+//import TemplateCharts
 import TemplateMockDataStorageProvider
 import TemplateSchedule
 import TemplateSharedContext
@@ -17,6 +18,7 @@ struct HomeView: View {
     enum Tabs: String {
         case schedule
         case contact
+//        case charts
         case mockUpload
     }
     
@@ -31,6 +33,11 @@ struct HomeView: View {
                 .tabItem {
                     Label("SCHEDULE_TAB_TITLE", systemImage: "list.clipboard")
                 }
+//            ChartsView()
+//                .tag(Tabs.charts)
+//                .tabItem {
+//                    Label("CHARTS_TAB_TITLE", systemImage: "chart.xyaxis.line")
+//                }
             Contacts()
                 .tag(Tabs.contact)
                 .tabItem {

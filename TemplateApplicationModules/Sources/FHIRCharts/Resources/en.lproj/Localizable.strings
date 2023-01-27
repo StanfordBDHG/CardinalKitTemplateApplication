@@ -1,0 +1,18 @@
+//
+// This source file is part of the CardinalKit open-source project
+//
+// SPDX-FileCopyrightText: 2022 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+// Scope
+"FHIR_CHART_SCOPE_DAY" = "Day";
+"FHIR_CHART_SCOPE_WEEK" = "Week";
+"FHIR_CHART_SCOPE_MONTH" = "Month";
+"FHIR_CHART_SCOPE_YEAR" = "Year";
+
+
+"FHIR_CHART_SCOPE_PICKER" = "Scope";
+"FHIR_CHART_X_AXIS" = "X Axis";
+"FHIR_CHART_Y_AXIS" = "Y Axis";

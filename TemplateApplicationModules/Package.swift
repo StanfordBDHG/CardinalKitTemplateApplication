@@ -18,6 +18,7 @@ let package = Package(
         .iOS(.v16)
     ],
     products: [
+//        .library(name: "TemplateCharts", targets: ["TemplateCharts"]),
         .library(name: "TemplateContacts", targets: ["TemplateContacts"]),
         .library(name: "TemplateMockDataStorageProvider", targets: ["TemplateMockDataStorageProvider"]),
         .library(name: "TemplateOnboardingFlow", targets: ["TemplateOnboardingFlow"]),
@@ -25,9 +26,20 @@ let package = Package(
         .library(name: "TemplateSharedContext", targets: ["TemplateSharedContext"])
     ],
     dependencies: [
-        .package(url: "https://github.com/StanfordBDHG/CardinalKit.git", .upToNextMinor(from: "0.2.1"))
+//        .package(url: "https://github.com/apple/FHIRModels", .upToNextMinor(from: "0.4.0")),
+//        .package(url: "https://github.com/StanfordBDHG/HealthKitOnFHIR", .upToNextMinor(from: "0.2.2")),
+        .package(url: "https://github.com/StanfordBDHG/CardinalKit.git", branch: "cardinalKitDocs")
     ],
     targets: [
+//        .target(
+//            name: "FHIRCharts",
+//            dependencies: [
+//                .product(name: "CardinalKit", package: "CardinalKit"),
+//                .product(name: "FHIR", package: "CardinalKit"),
+//                .product(name: "ModelsR4", package: "FHIRModels"),
+//                .product(name: "HealthKitOnFHIR", package: "HealthKitOnFHIR")
+//            ]
+//        ),
         .target(
             name: "TemplateContacts",
             dependencies: [
@@ -38,6 +50,17 @@ let package = Package(
                 .process("Resources")
             ]
         ),
+//        .target(
+//            name: "TemplateCharts",
+//            dependencies: [
+//                .target(name: "TemplateSharedContext"),
+//                .target(name: "FHIRCharts"),
+//                .product(name: "Contact", package: "CardinalKit")
+//            ],
+//            resources: [
+//                .process("Resources")
+//            ]
+//        ),
         .target(
             name: "TemplateMockDataStorageProvider",
             dependencies: [
