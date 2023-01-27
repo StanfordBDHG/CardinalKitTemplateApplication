@@ -37,7 +37,7 @@ public struct FHIRObservationChart: View {
     
     
     func loadObservations() {
-        _Concurrency.Task {
+        _Concurrency.Task { @MainActor in
             let observations = await fhirStandard.resources(resourceType: Observation.self)
             self.observations = observations.filter { observation in
                 observation.code.coding?.contains(where: { coding in coding.code?.value?.string == code }) ?? false

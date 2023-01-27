@@ -26,7 +26,7 @@ extension TemplateApplicationScheduler {
                     description: String(localized: "TASK_SOCIAL_SUPPORT_QUESTIONNAIRE_DESCRIPTION", bundle: .module),
                     schedule: Schedule(
                         start: Calendar.current.startOfDay(for: Date()),
-                        dateComponents: .init(hour: 17, minute: 30), // Every Day at 5:30 PM
+                        dateComponents: .init(hour: 16, minute: 0), // Every Day at 5:30 PM
                         end: .numberOfEvents(356)
                     ),
                     context: TemplateApplicationTaskContext.questionnaire(Bundle.module.questionnaire(withName: "SocialSupportQuestionnaire"))

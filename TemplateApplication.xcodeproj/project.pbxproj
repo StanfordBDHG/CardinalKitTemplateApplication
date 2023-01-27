@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F17A11729834C9800E5266E /* TemplateCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 2F17A11629834C9800E5266E /* TemplateCharts */; };
 		2F48D6F729834AB100F6BF88 /* TemplateContacts in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6F629834AB100F6BF88 /* TemplateContacts */; };
 		2F48D6F929834AB100F6BF88 /* TemplateMockDataStorageProvider in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6F829834AB100F6BF88 /* TemplateMockDataStorageProvider */; };
 		2F48D6FB29834AB100F6BF88 /* TemplateOnboardingFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 2F48D6FA29834AB100F6BF88 /* TemplateOnboardingFlow */; };
@@ -72,6 +73,7 @@
 				2F48D70929834ABD00F6BF88 /* Questionnaires in Frameworks */,
 				2F48D70129834ABD00F6BF88 /* CardinalKit in Frameworks */,
 				2F48D70329834ABD00F6BF88 /* FHIR in Frameworks */,
+				2F17A11729834C9800E5266E /* TemplateCharts in Frameworks */,
 				2F48D6F729834AB100F6BF88 /* TemplateContacts in Frameworks */,
 				2F48D6FD29834AB100F6BF88 /* TemplateSchedule in Frameworks */,
 				2F48D70529834ABD00F6BF88 /* HealthKitDataSource in Frameworks */,
@@ -191,6 +193,7 @@
 				2F48D70629834ABD00F6BF88 /* HealthKitToFHIRAdapter */,
 				2F48D70829834ABD00F6BF88 /* Questionnaires */,
 				2F48D70A29834ABD00F6BF88 /* Scheduler */,
+				2F17A11629834C9800E5266E /* TemplateCharts */,
 			);
 			productName = TemplateApplication;
 			productReference = 653A254D283387FE005D4D48 /* TemplateApplication.app */;
@@ -670,6 +673,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F17A11629834C9800E5266E /* TemplateCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TemplateCharts;
+		};
 		2F48D6F629834AB100F6BF88 /* TemplateContacts */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TemplateContacts;
