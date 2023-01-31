@@ -12,7 +12,6 @@ import SwiftUI
 
 
 enum ChartScope: String, CaseIterable, Identifiable {
-    case day
     case week
     case month
     case halfYear
@@ -24,7 +23,6 @@ enum ChartScope: String, CaseIterable, Identifiable {
     
     var localizedString: String {
         switch self {
-        case .day: return String(localized: "FHIR_CHART_SCOPE_DAY", bundle: .module)
         case .week: return String(localized: "FHIR_CHART_SCOPE_WEEK", bundle: .module)
         case .month: return String(localized: "FHIR_CHART_SCOPE_MONTH", bundle: .module)
         case .halfYear: return String(localized: "FHIR_CHART_SCOPE_YEAR", bundle: .module)
@@ -35,8 +33,6 @@ enum ChartScope: String, CaseIterable, Identifiable {
         let calendar = Calendar.current
         let startOfDay = calendar.startOfDay(for: Date())
         switch self {
-        case .day:
-            return startOfDay
         case .week:
             return calendar.date(byAdding: .day, value: -6, to: startOfDay) ?? Date()
         case .month:
@@ -49,8 +45,6 @@ enum ChartScope: String, CaseIterable, Identifiable {
     
     var enumerationDateComponents: DateComponents {
         switch self {
-        case .day:
-            return DateComponents(minute: 0)
         case .week, .month:
             return DateComponents(hour: 0)
         case .halfYear:
@@ -60,8 +54,6 @@ enum ChartScope: String, CaseIterable, Identifiable {
     
     var presentationUnit: Calendar.Component {
         switch self {
-        case .day:
-            return .hour
         case .week, .month:
             return .day
         case .halfYear:
@@ -71,8 +63,6 @@ enum ChartScope: String, CaseIterable, Identifiable {
     
     var axisContent: some AxisContent {
         switch self {
-        case .day:
-            return AxisMarks(values: .stride(by: .hour))
         case .week:
             return AxisMarks(values: .stride(by: .day))
         case .month:

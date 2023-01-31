@@ -15,7 +15,7 @@ import SwiftUI
 
 
 struct QuantityObservationsChart: View {
-    @SceneStorage("FHIRCharts.StatusChartScopeSelection") private var scopeSelection: ChartScope = .day
+    @SceneStorage("FHIRCharts.StatusChartScopeSelection") private var scopeSelection: ChartScope = .week
     
     
     let observations: [Observation]
