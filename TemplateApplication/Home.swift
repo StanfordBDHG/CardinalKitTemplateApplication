@@ -6,12 +6,12 @@
 // SPDX-License-Identifier: MIT
 //
 
+import FHIRMockDataStorageProvider
 import SwiftUI
 import TemplateContacts
-import TemplateMockDataStorageProvider
+import TemplateProfile
 import TemplateSchedule
 import TemplateSharedContext
-
 
 struct HomeView: View {
     enum Tabs: String {
@@ -30,6 +30,11 @@ struct HomeView: View {
                 .tag(Tabs.schedule)
                 .tabItem {
                     Label("SCHEDULE_TAB_TITLE", systemImage: "list.clipboard")
+                }
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        ProfileNavigationButton()
+                    }
                 }
             Contacts()
                 .tag(Tabs.contact)
