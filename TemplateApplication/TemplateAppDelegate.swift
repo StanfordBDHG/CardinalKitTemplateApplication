@@ -27,7 +27,13 @@ class TemplateAppDelegate: CardinalKitAppDelegate {
     override var configuration: Configuration {
         Configuration(standard: FHIR()) {
             if !CommandLine.arguments.contains("--disableFirebase") {
+                // If debug scheme, use Firebase authentication emulator. If release scheme,
+                // use cloud live authentication in production project
+                #if DEBUG
                 FirebaseAccountConfiguration(emulatorSettings: (host: "localhost", port: 9099))
+                #else
+                FirebaseAccountConfiguration()
+                #endif
                 firestore
             }
             if HKHealthStore.isHealthDataAvailable() {
@@ -41,13 +47,24 @@ class TemplateAppDelegate: CardinalKitAppDelegate {
     
     
     private var firestore: Firestore<FHIR> {
+        // If debug scheme, use Firebase firestore emulator. If release scheme,
+        // use cloud live firestore in production project
+        #if DEBUG
         Firestore(
             adapter: {
                 FHIRToFirestoreAdapter()
                 FirestoreStoragePrefixUserIdAdapter()
             },
-            settings: .emulator
+            settings: .emulator // sets up firestore simulator
         )
+        #else
+        Firestore(
+            adapter: {
+                FHIRToFirestoreAdapter()
+                FirestoreStoragePrefixUserIdAdapter()
+            }
+        )
+        #endif
     }
     
     
