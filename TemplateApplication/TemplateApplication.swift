@@ -22,7 +22,7 @@ struct TemplateApplication: App {
         WindowGroup {
             HomeView()
                 .sheet(isPresented: !$completedOnboardingFlow) {
-                    OnboardingFlow()
+                    OnboardingFlow().interactiveDismissDisabled(true)
                 }
                 .testingSetup()
                 .cardinalKit(appDelegate)
